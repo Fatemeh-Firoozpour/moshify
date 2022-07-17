@@ -190,6 +190,11 @@ margin-right: 2rem;
 background: #00c8eb;
 }
 
+.button--strech {
+    padding-left: 6rem;
+    padding-right: 6rem;
+} 
+
 .button--accent {
     background: var(--color-accent);
     color: #fff;
@@ -351,4 +356,44 @@ padding: 3rem;
         margin-left:6rem ;
     }
 
+}
+
+/* callouts */
+.callout {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+.callout__content {
+text-align: center;
+color: #fff;
+padding-left: 1rem;
+padding-right: 1rem;
+
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+.callout .button  {
+    justify-self: center;
+    align-self: center;
+    
+}
+
+@media screen and (min-width:768px) {
+    .callout  .grid--2cols {
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content {
+        text-align: left;
+    }
+    .callout .button {
+        margin-right: 1rem;
+    }
+    
 }
