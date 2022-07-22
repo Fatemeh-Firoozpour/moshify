@@ -142,8 +142,8 @@ margin-right: 2rem;
 }
 
 .list--tick .list__item {
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width:1024px) {
@@ -338,6 +338,9 @@ border-radius: 50%;
     
 }
 
+@media screen and {
+    
+}
 .testimonial{
 padding: 3rem;
 }
@@ -520,3 +523,127 @@ transition: box-shadow 0.3s;
     
 }
 
+/* card */
+
+.card {
+
+}
+
+.card--primary .card__header{
+    background: var(--color-primary);
+}
+
+.card--secondary .card__header{
+    background-color: var(--color-secondary);
+}
+
+.card__body {
+    padding: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.card__body .button {
+    margin-top: 9rem;
+}
+.card__header {
+    
+    padding: 4rem;
+    padding-right: 1rem;
+    color: #fff;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.card__header .badge{
+    filter: brightness(0.90);
+    margin: 0.7rem;
+}
+
+/* plan */
+.plan {
+transition: transform .2s ease-out;
+}
+
+.plan__name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.plan__price {
+    font-size: 6rem;
+}
+
+.plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+
+.plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .list__item {
+    margin-bottom: 2rem;
+}
+
+.plan--popular {
+    transform: scale(1.1);
+}
+
+.plan:hover {
+    transform: scale(1.05);
+
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 4rem;
+    }
+
+    .plan__description {
+        font-size: 1.5rem;
+    }
+
+    .plan__billing-cycle {
+            font-size: 2rem;
+    }
+}
+
+/* plans block */
+
+.block-plans .grid{
+gap: 8rem 4rem;
+}
+
+.block-plans .card{
+max-width: 500px;
+margin:0 auto;
+}
+
+.block-plans{
+    padding: 8rem;
+    padding: 8rem 4rem 4rem 4rem;
+}
+
+@media screen and (min-width:1024px) {
+    .grid--3cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
