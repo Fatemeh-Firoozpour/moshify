@@ -627,7 +627,7 @@ transition: transform .2s ease-out;
 /* plans block */
 
 .block-plans .grid{
-gap: 8rem 4rem;
+gap: 8rem 4rem ;
 }
 
 .block-plans .card{
@@ -636,7 +636,7 @@ margin:0 auto;
 }
 
 .block-plans{
-    padding: 8rem;
+    
     padding: 8rem 4rem 4rem 4rem;
 }
 
@@ -644,6 +644,39 @@ margin:0 auto;
     .grid--3cols {
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
-    
+/* features */
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__icon {
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+}
+
+.feature__image{
+    width: 100%;
+}
+
+.feature__heading {
+    margin: 0;
+}
+
+.block__header {
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
 }
